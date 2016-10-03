@@ -1,0 +1,7 @@
+resolver: lts-7.0
+
+packages:
+- '.'
+- location:
+    git: git@github.com:m4lvin/sylvan-haskell
+    commit: b6f483180b6572627a76ebbc36340a1795921469
