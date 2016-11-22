@@ -1,7 +1,13 @@
-# sylvan-haskell-example
+# Sylvan Haskell Example
 
-1. Compile and install Sylvan with "-fPIC -shared" added in `CMakeLists.txt`.
+A toy example showing how to get started with the
+[Haskell bindings](https://github.com/adamwalker/sylvan-haskell) for
+[Sylvan](https://github.com/utwente-fmt/sylvan).
 
-2. `stack build`
+## Usage
+
+1. Get, compile and install Sylvan: `make sylvan-install`
+
+2. Compile this `stack build`
 
 3. `stack exec sylvan-haskell-example`

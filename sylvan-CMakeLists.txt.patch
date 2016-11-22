@@ -1,0 +1,6 @@
+6,7c6,7
+< set(CMAKE_C_FLAGS "-O3 -Wextra -Wall -Werror -fno-strict-aliasing -std=gnu11")
+< set(CMAKE_CXX_FLAGS "-O3 -Wextra -Wall -Werror -fno-strict-aliasing -Wno-deprecated-register -std=gnu++11")
+---
+> set(CMAKE_C_FLAGS "-O3 -Wextra -Wall -Werror -fno-strict-aliasing -std=gnu11 -fPIC -shared")
+> set(CMAKE_CXX_FLAGS "-O3 -Wextra -Wall -Werror -fno-strict-aliasing -Wno-deprecated-register -std=gnu++11 -fPIC -shared")
