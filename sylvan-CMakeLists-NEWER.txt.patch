@@ -1,0 +1,6 @@
+26,27c26,27
+< set(CMAKE_C_FLAGS "-O2 -Wextra -Wall -Werror -fno-strict-aliasing ${CMAKE_C_FLAGS}")
+< set(CMAKE_CXX_FLAGS "-O2 -Wextra -Wall -Werror -fno-strict-aliasing -Wno-deprecated ${CMAKE_CXX_FLAGS}")
+---
+> set(CMAKE_C_FLAGS "-O2 -Wextra -Wall -Werror -fno-strict-aliasing -fPIC -shared ${CMAKE_C_FLAGS}")
+> set(CMAKE_CXX_FLAGS "-O2 -Wextra -Wall -Werror -fno-strict-aliasing -Wno-deprecated -fPIC -shared ${CMAKE_CXX_FLAGS}")

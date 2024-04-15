@@ -4,7 +4,7 @@ synopsis:             Sylvan Haskell Example
 description:          See README.md and Makefile.
 author:               Malvin Gattinger
 maintainer:           malvin@w4eg.de
-copyright:            2016 Malvin Gattinger
+copyright:            2024 Malvin Gattinger
 category:             Data
 build-type:           Simple
 cabal-version:        >=1.10
@@ -14,6 +14,7 @@ executable sylvan-haskell-example
   default-language:   Haskell2010
   main-is:            sylvan-haskell-example.hs
   build-depends:      base >= 4.7 && < 5,
-                      primitive >=0.5 && <0.7,
+                      primitive >=0.5 && <0.9,
                       sylvan-haskell
   extra-libraries:    sylvan, pthread, hwloc
+  extra-lib-dirs:     /usr/local/lib/

@@ -1,7 +1,13 @@
-resolver: lts-7.0
+resolver: lts-21.25
 
 packages:
 - '.'
-- location:
-    git: git@github.com:adamwalker/sylvan-haskell
-    commit: 233b1c102a8f6f4af499844e1e111c55883510c4
+
+extra-deps:
+- git: git@github.com:adamwalker/sylvan-haskell
+  commit: 53a2f5ea9d3c67a95f132f1de05bf7e82f5d5fb8
+
+allow-newer: true
+
+extra-lib-dirs:
+- /usr/local/lib
