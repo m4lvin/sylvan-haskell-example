@@ -5,7 +5,7 @@ default:
 	@echo "See README.md"
 
 sylvan-clone-patch-make-install:
-	git clone --branch $SYLVAN_VERSION git@github.com:utwente-fmt/sylvan.git
+	git clone --branch $(SYLVAN_VERSION) git@github.com:utwente-fmt/sylvan.git
 	patch sylvan/CMakeLists.txt sylvan-CMakeLists.txt.patch
 	patch sylvan/src/sha2.c sylvan-src-sha2.c.patch
 	cd sylvan && cmake .
