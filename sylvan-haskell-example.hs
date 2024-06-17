@@ -13,6 +13,7 @@ main = do
   laceStartup
   putStrLn "sylvanInitPackage ..."
   sylvanInitPackage (2^(22::Int)) (2^(25::Int)) (2^(22::Int)) (2^(25::Int))
+  sylvanInit
   putStr "T == T : "; print (sylvanTrue == sylvanTrue)
   putStr "F == T : "; print (sylvanFalse == sylvanTrue)
   putStr "F == F : "; print (sylvanFalse == sylvanFalse)
