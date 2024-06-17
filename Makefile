@@ -12,3 +12,8 @@ sylvan-clone-patch-make-install:
 	cd sylvan && make
 	cd sylvan && sudo make install
 	rm -rf sylvan
+
+segfault:
+	rm -rf .stack-work
+	stack build --no-strip
+	gdb -ex run .stack-work/install/x86_64-linux/*/9.4.8/bin/sylvan-haskell-example
